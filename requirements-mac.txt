@@ -1,0 +1,44 @@
+# Mac-Compatible Requirements for Letter Counting AI Project
+# Removes CUDA-specific packages and uses MPS-compatible alternatives
+
+# Core ML Libraries (MPS-compatible)
+torch>=2.2.0
+torchvision>=0.17.0
+torchaudio>=2.2.0
+
+# Hugging Face Ecosystem
+transformers>=4.40.0
+datasets>=2.19.0
+accelerate>=0.30.0
+peft>=0.10.0
+trl>=0.8.0
+safetensors>=0.4.0
+huggingface-hub>=0.23.0
+tokenizers>=0.19.0
+
+# Training & Optimization
+sentencepiece>=0.2.0
+
+# Jupyter & Visualization
+ipykernel>=6.29.0
+ipython>=8.24.0
+ipython-autotime>=0.3.2
+jupyter-client>=8.6.0
+jupyter-core>=5.7.0
+matplotlib>=3.8.0
+pandas>=2.2.0
+
+# Utilities
+regex>=2024.4.0
+tqdm>=4.66.0
+pyyaml>=6.0.0
+filelock>=3.14.0
+numpy>=1.26.0
+scipy>=1.13.0
+pillow>=10.3.0
+
+# For notebook support
+nest-asyncio>=1.6.0
+
+# Environment
+python-dotenv>=1.0.0

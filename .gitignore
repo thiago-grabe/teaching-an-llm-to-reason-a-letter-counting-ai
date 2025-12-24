@@ -205,3 +205,70 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+CLAUDE.md
+
+*.md
+!README.md
+
+# ===========================================
+# ML/AI Large Files - Ignore for Git Push
+# ===========================================
+
+# Model weights and checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.onnx
+
+# LoRA adapters and saved models
+grpo_saved_lora/
+**/grpo_saved_lora/
+lora_adapter/
+adapter_model/
+
+# Training outputs and checkpoints
+outputs/
+**/outputs/
+checkpoints/
+**/checkpoints/
+checkpoint-*/
+**/checkpoint-*/
+
+# Hugging Face cache
+.cache/
+huggingface/
+~/.cache/huggingface/
+
+# Tokenizer files (large)
+vocab.json
+merges.txt
+tokenizer.json
+tokenizer_config.json
+special_tokens_map.json
+
+# Optimizer states
+optimizer.pt
+scheduler.pt
+rng_state.pth
+trainer_state.json
+
+# Large data files
+*.arrow
+*.parquet
+*.feather
+
+# Wandb logs
+wandb/
+
+# TensorBoard logs
+runs/
+logs/
+tb_logs/
+
+# Jupyter notebook outputs (optional - uncomment if needed)
+# *.ipynb
